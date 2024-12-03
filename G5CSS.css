@@ -1,0 +1,7 @@
+h1 {
+    text-indent: 0em;
+    color: red;
+    text-align: center !important ;}
+
+h1 { text-align: left; color: orange ;}
+* {text-indent: 1em; color: red ;}
