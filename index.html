@@ -1,128 +1,119 @@
-<DOCTYPE html>
+<!DOCTYPE html>
 <html>
-	<head> 
-		<meta charset="utf-8">
-		<title> Nhóm 5 Tin học</title>
-		<link rel="stylesheet" href="G5CSS.css">
-	</head>	
-	<body style="background-color:palegreen;">
-		<div id="header"> 
-			<table style="border:lightseagreen; border-width:1px; border-style:solid;width: 80%; border-radius: 10px;">
-					<tr style="font-family:Garamond;font-size: 50px;color: midnightblue;" align="left"><th> &ensp;Welcome</th>
-					</tr>
-			</table>
-			<hr style="color:florawhite;"> <!-- kẻ ngang -->
-			<ul style="list-style-type: circle;">
-				<li style="font-family:bookman;font-size: 25px;color: midnightblue;">&emsp;Teacher: Mr. Đức</li>
-				<li style="font-family:bookman;font-size: 25px;color: midnightblue;">&emsp;Nhóm 5 gồm các thành viên: </li>
-			</ul>
-		</div>
-		<div id="main-content">			
-			<table 
-			align="left"
-			style="width: 25%;height: 200px;">&emsp;
-				<style>
-					th, td {
-	  					border-style:solid;
-	  					border-radius: 10px;
-	 					border-color:lightseagreen;
-						}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giới thiệu Nhóm</title>
+    <style>
+        body {
+            font-family: Courier;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: url('https://images.unsplash.com/photo-1496170804262-975019a5cd34?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Ymx1ZSUyMHNreSUyMHN0YXJ8ZW58MHx8MHx8fDA%3D') no-repeat center center/cover;
+            color: white;
+            padding: 50px 0;
+            text-align: center;
+            animation: fadeIn 2s;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #00008B;
+            text-align: center;
+        }
+        .member {
+            margin: 20px 0;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            transition: transform 0.3s;
+        }
+        .member:hover {
+            transform: scale(1.05);
+            background-color: #f0f8ff;
+        }
+        .member a {
+            text-decoration: none;
+            color: #00008B;
+            font-weight: bold;
+        }
+        .form-container {          
+            margin-top: 30px;
+            padding: 20px;
+            background: #e9ecef;
+            border-radius: 5px;
+            color-text: white
+        }
+        .form-container input, .form-container textarea {
+        	font-family: Courier;
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+       }
+        .form-container button {
+        	font-family: cursive;            color: #00008B;
 
-				</style>
-				<p>
-					<tr align="left" style="font-family:timesnewroman;font-size: 20px;color: midnightblue;"><th><a href="Nhom5ne.html">Nguyễn Văn Đức</a></th></tr>
-					<tr align="left" style="font-family:timesnewroman;font-size: 20px;color: midnightblue;"><th><a href="LDK2.html">Lê Duy Khang</a></th></tr>
-					<tr align="left" style="font-family:timesnewroman;font-size: 20px;color: midnightblue;"><th><a href="VTMQ2.html">Võ Thị Mai Quyền</a></th></tr>
-					<tr align="left" style="font-family:timesnewroman;font-size: 20px;color: midnightblue;"><th><a href="HQTVP.html">Huỳnh Quốc Thái</a></th></tr>
-					<tr align="left" style="font-family:timesnewroman;font-size: 20px;color: midnightblue;"><th><a href="LAT2.html">Lê Anh Thư</a></th></tr>	
-				</p>
-			</table>
-			<table style="border:lightseagreen; border-width:1px; border-style:solid; border-radius: 10px;">
-					<tr style="font-family:timesnewroman;font-size: 20px;color: midnightblue;" align="left">
-						<th> &ensp;Đường dẫn liên kết: 
-							<a href="https://hanhtrangso.nxbgd.vn/sach-dien-tu?book_active=0">https://hanhtrangso.nxbgd.vn/sach-dien-tu?book_active=0</a>
-						</th>
-					</tr>
-			</table>
-			<table style="border:lightseagreen; border-width:1px; border-style:solid; border-radius: 10px;">
-					<tr style="font-family:timesnewroman;font-size: 20px;color: midnightblue;" align="left">
-						<th> 
-							<p align="centre"> &ensp;The blue sky </p>
-							<a> <img src="data:image/jpeg;base64,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"></a>
-						</th>
-					</tr>
-			</table>
-				 <table style="border:lightseagreen; border-width:1px; border-style:solid; border-radius: 10px;">
-					<tr style="font-family:timesnewroman;font-size: 20px;color: midnightblue;" align="left">
-						<th> 
-							<p align="centre"> &ensp;The rain </p>
-								<iframe width="560" height="315" src="https://www.youtube.com/embed/LifqCrDHO0c?si=DjMUBsOcADoa9xqV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-						</th>
-					</tr>
-			</table>
-			<table style="border:lightseagreen; border-width:1px; border-style:solid; border-radius: 10px;">
-					<tr style="font-family:timesnewroman;font-size: 20px;color: midnightblue;" align="left">
-						<th> 
-							<p align="centre">&ensp;Hello =)</p>
-							<form>
-								<br>
-									<label for="utf-8">&ensp;Name:&ensp;</label>
-										<input id="utf-8" type="text" style="border:lightseagreen;border-width:1px; border-style:solid; border-radius: 10px;font-family:timesnewroman;font-size: 20px;color: midnightblue"> &ensp;
-								</br>
-								<br>
-									<label for="utf-8">&ensp;Class:&ensp;</label>
-										<select id="class" name="class" style="border:lightseagreen;border-width:1px; border-style:solid; border-radius: 10px;font-family:timesnewroman;font-size: 20px;color: midnightblue">
-											<option value="10">10</option>
-											<option value="11">11</option>
-											<option value="12">12</option>									
-										</select> &ensp;
-								</br>	
-								<br>
-									<label for="utf-8">&ensp;How do you feel?&ensp;</label>
-										<input id="utf-8" type="radio" value="happy"  
-										style="border:lightseagreen;border-width:1px; border-style:solid; border-radius: 10px;font-family:timesnewroman;font-size: 20px;color: midnightblue"> &ensp;Happy :)&ensp;;)&ensp;</input>
-										<input id="utf-8" type="radio" value="unhappy"  
-										style="border:lightseagreen;border-width:1px; border-style:solid; border-radius: 10px;font-family:timesnewroman;font-size: 20px;color: midnightblue"> &ensp;Unhappy :(&ensp;</input>		
-								</br>
-								<br>
-									<label for="utf-8">&ensp;Hãy đăng 1 bức ảnh nhá!!!&ensp;</label>
-										<input id="utf-8" type="file" style="border:lightseagreen;border-width:1px; border-style:solid; border-radius: 10px;font-family:timesnewroman;font-size: 20px;color: midnightblue">		
-								</br>
-								<br>
-									<label for="utf-8">&ensp;Lựa chọn môn học&ensp;</label>
-										<br>
-											<input id="utf-8" type="checkbox" style="border:lightseagreen;border-width:1px; border-style:solid; border-radius: 10px;font-family:timesnewroman;font-size: 20px;color: midnightblue" value="Toán"> &ensp; Toán
-										</br>
-										<br>
-											<input id="utf-8" type="checkbox" style="border:lightseagreen;border-width:1px; border-style:solid; border-radius: 10px;font-family:timesnewroman;font-size: 20px;color: midnightblue" value="Tin"> &ensp; Tin
-										</br>
-										<br>
-											<input id="utf-8" type="checkbox" style="border:lightseagreen;border-width:1px; border-style:solid; border-radius: 10px;font-family:timesnewroman;font-size: 20px;color: midnightblue" value="Tiếng Anh"> &ensp; Tiếng Anh
-										</br>
-										<br>
-											<input id="utf-8" type="checkbox" style="border:lightseagreen;border-width:1px; border-style:solid; border-radius: 10px;font-family:timesnewroman;font-size: 20px;color: midnightblue" value="Văn"> &ensp; Văn
-										</br>
-										<br>
-											<input id="utf-8" type="checkbox" style="border:lightseagreen;border-width:1px; border-style:solid; border-radius: 10px;font-family:timesnewroman;font-size: 20px;color: midnightblue" value="Sử"> &ensp; Sử
-										</br>
-										<br>
-											<input id="utf-8" type="checkbox" style="border:lightseagreen;border-width:1px; border-style:solid; border-radius: 10px;font-family:timesnewroman;font-size: 20px;color: midnightblue" value="Địa"> &ensp; Địa
-										</br>
-										<br>
-											<input id="utf-8" type="checkbox" style="border:lightseagreen;border-width:1px; border-style:solid; border-radius: 10px;font-family:timesnewroman;font-size: 20px;color: midnightblue" value="Hóa"> &ensp; Hóa
-										</br>
-										<br>
-											<input id="utf-8" type="checkbox" style="border:lightseagreen;border-width:1px; border-style:solid; border-radius: 10px;font-family:timesnewroman;font-size: 20px;color: midnightblue" value="GDKT&PL"> &ensp; GDKT&PL
-										</br>
-								</br>							
-								<br> &ensp;
-									<input type="submit" value="Sign in" style="border:lightseagreen;border-width:1px; border-style:solid; border-radius: 10px;font-family:timesnewroman;font-size: 20px;color: midnightblue">				
-								</br>
-							</form>
-						</th>
-					</tr>
-			</table>
-		
-		</div>		
-	</body>
+            background-color: #00008B;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .form-container button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>GROUP 5</h1>
+</header>
+
+<div class="container">
+    <h2>MEMBERS</h2>
+    <div class="member">
+        <a href="Nhom5ne.html" target="_blank">Nguyễn Văn Đức</a> - 12T
+    </div>
+    <div class="member">
+        <a href="LDK2.html" target="_blank">Lê Duy Khang</a> - 12T
+    </div>
+    <div class="member">
+        <a href="VTMQ2.html" target="_blank">Võ Thị Mai Quyền</a> - 12T
+    </div>
+<div class="member">
+        <a href="HQTVP.html" target="_blank">Nguyễn Quốc Thái</a> - 12T 
+    </div>
+    <div class="member">
+        <a href="profile" target="_blank">Lê Anh Thư</a> - 12T 
+    </div>
+</div>     
+<div class="container form-container">
+    <h2>FORM</h2>
+    <form>
+        <input type="text"placeholder="Họ và tên" required>
+        <input type="date" placeholder="Ngày sinh" required>
+        <input type="email" placeholder="Email" required>
+        <textarea placeholder="Sở thích" rows="3"></textarea>
+        <textarea placeholder="Hoạt động gần đây" rows="3"></textarea>
+        <button type="submit">Submit</button>
+    </form>
+</div>
+</body>
 </html>
