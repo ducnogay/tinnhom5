@@ -1,68 +1,86 @@
 ﻿<!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title>Profile page</title>
-	<meta charset="utf-8">
-	<style type="text/css">
-		h{
-  		padding: 30px;
-  		text-align: center;
-  		font-size: 20px;
-  		color: #03e8fc;
-		}
-		img.cangiua {
-			display: block;
-			margin-left: auto;
-			margin-right: auto;
-			border-radius: 50%;
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction</title>
+    <style>
+        body {
+            font-family: Courier;
+            background-color: #f0f0f0;
+            color: #00008B;
+            margin: 0;
+            padding: 0;
+        }
 
-		}
-		hz{
-			padding: 20px;
-  			text-align: center;
-  			font-size: 20px;
-  			color: #03e8fc;
-		}
-	</style>
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            background: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        h2 {
+            text-align: center;
+            color: #00008B;
+         }
+
+        .profile-image {
+            display: block;
+            margin: 20px auto;
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            transition: transform 0.3s;
+         }
+
+        .profile-image:hover {
+            transform: scale(1.1);            
+        }
+
+        .info {
+            margin: 20px 0;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background-color: #fafafa;
+        }
+
+        .facebook-link {
+            display: block;
+            text-align: center;
+            margin: 20px 0;
+            text-decoration: none;
+            color: white;
+            background-color: #3b5998;
+            padding: 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .facebook-link:hover {
+            background-color: #2d4373;
+        }
+    </style>
 </head>
 <body>
-	<h>
-		<h1>Introduce</h1>
-	</h>
-	<img src="ldk.jpg" width="300" class="cangiua">
-	<hz>
-		<h3>Lê Duy Khang</h3>
-		<h4>MY PROFILE</h4>
-	</hz>
-	<table>
-		<tr style="color: yellow">
-			<th>Họ tên</th>
-			<th>Lê Duy Khang</th>
-		</tr>
-		<tr style="color: green">
-			<th>Năm sinh</th>
-			<th>18/07/2007</th>
-		</tr>
-		<tr style="color: yellow">
-			<th>Trường&Lớp</th>
-			<th>Thpt Chuyên Bến Tre, 12 Toán</th>
-		</tr>
-		<tr style="color: green">
-			<th>Sở thích</th>
-			<th>Cực kì thích mèo</th>
-		</tr>
-		<tr style="color: yellow">
-			<th>Siêu năng lực</th>
-			<th>Làm được mọi thứ nếu có matcha</th>
-		</tr>
-		<tr style="color: green">
-			<th>Fb link</th>
-			<th>https://www.facebook.com/duykhang.le.35325?mibextid=ZbWKwL</th>
-		</tr>
-		<tr style="color: green">
-			<th>  </th>
-			<th>(Mực Nướng Xiên Que)</th>
-		</tr>
-	</table>
+
+    <div class="container">
+        <h2>My Introduction</h2>
+        <img src="https://scontent.fsgn5-13.fna.fbcdn.net/v/t39.30808-1/442502565_991648342524879_4364192925301554030_n.jpg?stp=dst-jpg_s200x200_tt6&_nc_cat=104&ccb=1-7&_nc_sid=0ecb9b&_nc_eui2=AeEJPlp3yCEMEmAg9_o4vGs6qz-cpqeESkOrP5ymp4RKQwDCZf4KZfEBASiaIdu2sMw06ZcMPAXQ9qGCVIPFA6ML&_nc_ohc=Rx54es02E_UQ7kNvgH76wlq&_nc_zt=24&_nc_ht=scontent.fsgn5-13.fna&_nc_gid=AmmwDvKitB6D0OujCKDiQrE&oh=00_AYCdsuXBjjXqCy6br11Np0vMkYbPOGR--csAklOo6cWD-Q&oe=675CBCCB"profile-image">
+
+        <div class="info">
+            <p><strong>Name:</strong> Lê Duy Khang</p>
+	    <p><strong>School:</strong> THPT Chuyên Bến Tre</p>
+            <p><strong>Date of Birth:</strong> 18/07/2007</p>
+            <p><strong>Class:</strong> 12 Toán</p>
+            <p><strong>Slogan:</strong> Hãy dụ dỗ tôi bằng matcha</p>
+        </div>
+
+        <a href="https://www.facebook.com/duykhang.le.35325?mibextid=ZbWKwL">Visit My Facebook</a>
+    </div>
+
 </body>
 </html>
