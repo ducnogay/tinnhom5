@@ -94,3 +94,8 @@ img {
     transform: unset;
     border: none;
 }
+
+a{
+    text-decoration: none;
+}
+
