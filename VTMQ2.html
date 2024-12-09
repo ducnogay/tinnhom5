@@ -1,68 +1,86 @@
-﻿<!DOCTYPE html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-	<title>Profile page</title>
-	<meta charset="utf-8">
-	<style type="text/css">
-		h{
-  		padding: 30px;
-  		text-align: center;
-  		font-size: 20px;
-  		color: #03e8fc;
-		}
-		img.cangiua {
-			display: block;
-			margin-left: auto;
-			margin-right: auto;
-			border-radius: 50%;
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction</title>
+    <style>
+        body {
+            font-family: Courier;
+            background-color: #f0f0f0;
+            color: #00008B;
+            margin: 0;
+            padding: 0;
+        }
 
-		}
-		hz{
-			padding: 20px;
-  			text-align: center;
-  			font-size: 20px;
-  			color: #03e8fc;
-		}
-	</style>
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            background: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        h2 {
+            text-align: center;
+            color: #00008B;
+         }
+
+        .profile-image {
+            display: block;
+            margin: 20px auto;
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            transition: transform 0.3s;
+         }
+
+        .profile-image:hover {
+            transform: scale(1.1);            
+        }
+
+        .info {
+            margin: 20px 0;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background-color: #fafafa;
+        }
+
+        .facebook-link {
+            display: block;
+            text-align: center;
+            margin: 20px 0;
+            text-decoration: none;
+            color: white;
+            background-color: #3b5998;
+            padding: 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .facebook-link:hover {
+            background-color: #2d4373;
+        }
+    </style>
 </head>
 <body>
-	<h>
-		<h1>Introduce</h1>
-	</h>
-	<img src="vtmq.jpg" width="300" class="cangiua">
-	<hz>
-		<h3>Võ Thị Mai Quyền</h3>
-		<h4>MY PROFILE</h4>
-	</hz>
-	<table>
-		<tr style="color: pink">
-			<th>Họ tên</th>
-			<th>Võ Thị Mai Quyền</th>
-		</tr>
-		<tr style="color: blue">
-			<th>Năm sinh</th>
-			<th>09/05/2007</th>
-		</tr>
-		<tr style="color: pink">
-			<th>Trường&Lớp</th>
-			<th>Thpt Chuyên Bến Tre, 12 Toán</th>
-		</tr>
-		<tr style="color: blue">
-			<th>Sở thích</th>
-			<th>Thích các món matcha</th>
-		</tr>
-		<tr style="color: pink">
-			<th>Slogan</th>
-			<th>"Iu màu hồng ghét sự giả dối"</th>
-		</tr>
-		<tr style="color: blue">
-			<th>Fb link</th>
-			<th>https://www.facebook.com/maiquyennnn?mibextid=ZbWKwL</th>
-		</tr>
-		<tr style="color: blue">
-			<th>  </th>
-			<th>(Mai Quyền)</th>
-		</tr>
-	</table>
+
+    <div class="container">
+        <h2>My Introduction</h2>
+        <img src="https://scontent.fdad3-4.fna.fbcdn.net/v/t39.30808-1/469947497_1093117885700105_1001261618697117800_n.jpg?stp=dst-jpg_s200x200_tt6&_nc_cat=104&ccb=1-7&_nc_sid=0ecb9b&_nc_eui2=AeGA2dVrNOPEOXvBAAJzulvN76z5A4BBbcHvrPkDgEFtwUKBTHNN-iQaKaA2PI8Jhec50vUIz4ZRHxReky6bG66t&_nc_ohc=UYsYyjH7n-IQ7kNvgGcee_H&_nc_zt=24&_nc_ht=scontent.fdad3-4.fna&_nc_gid=AJNXs7xoQ8NTFkAyvH_4H6U&oh=00_AYADiRlI3yePltprjuhmKAK-PnC86ItEmnMS0k_5FN7b4Q&oe=675CB6D9"profile-image">
+
+        <div class="info">
+            <p><strong>Name:</strong> Võ Thị Mai Quyền</p>
+	    <p><strong>School:</strong> THPT Chuyên Bến Tre</p>
+            <p><strong>Date of Birth:</strong> 09/05/2007</p>
+            <p><strong>Class:</strong> 12 Toán</p>
+            <p><strong>Slogan:</strong> Cười nhiều cho thật xinh</p>
+        </div>
+
+        <a href="https://www.facebook.com/maiquyennnn?mibextid=ZbWKwL">Visit My Facebook</a>
+    </div>
+
 </body>
 </html>
