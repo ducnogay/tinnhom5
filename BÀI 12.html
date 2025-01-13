@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>BÀI 12</title>
+</head>
+<body>
+	<h1>BÀI 12</h1>
+	<h2>Vận dụng 1 trang 70 Tin học 12: Tạo một biểu mẫu đăng kí thành viên câu lạc bộ.</h2>
+	<h3>Lời giải:</h3>
+	<p>< !DOCTYPE html></p>
+<p>< html lang="en"></p>
+<p>< head></p>
+<p>< meta charset="UTF-8"></p>
+<p>< meta name="viewport" content="width=device-width, initial-scale=1.0"></p>
+<p>< title>Biểu mẫu đăng ký thành viên< /title></p>
+<p>< /head></p>
+<p>< body></p>
+<p>< h2>Đăng ký thành viên< /h2></p>
+<p>< form action="/submit_registration" method="post"></p>
+  <p>< label for="fullname">Họ và tên:< /label>< br></p>
+  <p>< input type="text" id="fullname" name="fullname" required>< br></p>
+  <p>< label for="email">Email:< /label>< br></p>
+  <p>< input type="email" id="email" name="email" required>< br></p>
+  <p>< label for="birthdate">Ngày sinh:< /label>< br></p>
+  <p>< input type="date" id="birthdate" name="birthdate" required>< br></p>
+  <p>< label for="membership">Loại hình thành viên:< /label>< br></p>
+  <p>< select id="membership" name="membership"></p>
+    <p>< option value="basic">Thành viên cơ bản< /option></p>
+    <p>< option value="premium">Thành viên cao cấp< /option></p>
+  <p>< /select>< br></p>
+  <p>< input type="submit" value="Đăng ký"></p>
+<p>< /form></p>
+<p>< /body></p>
+<p>< /html></p>
+    <h2>Vận dụng 2 trang 70 Tin học 12: Sửa lại mã nguồn của trang web đã viết trong Nhiệm vụ 2, Bài 11 để thêm một liên kết cho cụm từ Đăng kí. Khi nháy chuột vào liên kết, trang web đã viết ở câu 1 sẽ được hiển thị trong iframe.</h2>
+    <h3>Lời giải:</h3>
+    <p>< !DOCTYPE html></p>
+<p>< html lang="vi"></p>
+<p>< head></p>
+<p>< meta charset="UTF-8"></p>
+<p>< meta name="viewport" content="width=device-width, initial-scale=1.0"></p>
+<p>< title>Trang web nghệ thuật< /title></p>
+<p>< style></p>
+  <p>iframe {</p>
+    <p>width: 100%;</p>
+    <p>height: 500px;</p>
+    <p>border: 1px solid #ccc;</p>
+  <p>}</p>
+<p>< /style></p>
+<p>< /head></p>
+<p>< body></p>
+<p>< h1>Nghệ thuật< /h1></p>
+<p>< img src="link_den_anh_minh_hoa.jpg" alt="Hình ảnh minh họa" width="500" height="300"></p>
+<p>< audio controls></p>
+  <p>< source src="link_den_bai_hat_quoc_ca.mp3" type="audio/mpeg"></p>
+<p>< /audio></p>
+<p>< p>< a href="link_den_trang_web.html" target="iframe_content">Đăng ký< /a>< /p></p>
+<p>< iframe name="iframe_content" frameborder="0">< /iframe></p>
+<p>< /body></p>
+<p>< /html></p>
+
+
+</body>
+</html>
+
